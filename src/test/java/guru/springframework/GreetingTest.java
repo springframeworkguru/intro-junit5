@@ -14,30 +14,23 @@ class GreetingTest {
     @BeforeEach
     void setUp() {
         System.out.println("In Before Each....");
-
         greeting = new Greeting();
     }
 
     @Test
     void helloWorld() {
-        greeting = new Greeting();
-
         System.out.println(greeting.helloWorld());
 
     }
 
     @Test
     void helloWorld1() {
-        greeting = new Greeting();
-
         System.out.println(greeting.helloWorld("John"));
     }
 
     @Test
     void helloWorld2() {
-        greeting = new Greeting();
-
-        System.out.println(greeting.helloWorld("Sam"));
+       System.out.println(greeting.helloWorld("Sam"));
     }
 
     @AfterEach
